@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="D:/SummerSDET2023">
+        <classes>
+            <class name="org.example.Main">
+                <methods>
+                    <include name="test1"/>
+                    <include name="testAlert"/>
+                    <include name="testAlert2"/>
+                    <include name="testFrame"/>
+                    <include name="testNestedFrame"/>
+                </methods>
+            </class>
+            <class name="Demo.ActionDemo">
+                <methods>
+                    <include name="demo123"/>
+                </methods>
+            </class>
+            <class name="Demo.BasicLocators">
+                <methods>
+                    <include name="byIdTest"/>
+                    <include name="byTagName"/>
+                    <include name="byClassName"/>
+                    <include name="linkedText"/>
+                    <include name="partialLinkedText"/>
+                    <include name="byName"/>
+                </methods>
+            </class>
+            <class name="Demo.BrowserWindows">
+                <methods>
+                    <include name="windowsTest"/>
+                    <include name="windowsTest2"/>
+                    <include name="windowsTest3"/>
+                </methods>
+            </class>
+            <class name="Demo.CssDemo">
+                <methods>
+                    <include name="cssDEmo1"/>
+                </methods>
+            </class>
+            <class name="Demo.Dynamic">
+                <methods>
+                    <include name="clickclick"/>
+                    <include name="visibleAfter"/>
+                </methods>
+            </class>
+            <class name="Demo.JS">
+                <methods>
+                    <include name="demo1"/>
+                </methods>
+            </class>
+            <class name="Demo.MoveToElementDemo">
+                <methods>
+                    <include name="demo1234"/>
+                </methods>
+            </class>
+            <class name="Demo.NambaFood">
+                <methods>
+                    <include name="getFood"/>
+                </methods>
+            </class>
+            <class name="Demo.NambaFood2">
+                <methods>
+                    <include name="orderFood"/>
+                </methods>
+            </class>
+            <class name="Demo.NavigationAndDropdowns">
+                <methods>
+                    <include name="demo1"/>
+                    <include name="demo2"/>
+                </methods>
+            </class>
+            <class name="Demo.TextBox">
+                <methods>
+                    <include name="fillUPFormTest"/>
+                    <include name="fillUPFormTest2"/>
+                    <include name="fillUPFormTest3"/>
+                    <include name="fillUPFormTest4"/>
+                </methods>
+            </class>
+            <class name="Demo.XpathDemo">
+                <methods>
+                    <include name="absoluteXpath"/>
+                    <include name="relativeXpath"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
