@@ -6,7 +6,7 @@ public class DynamicTest extends BaseTest{
     @Test
     public void testDynamic() throws InterruptedException {
         driver.get("https://demoqa.com/dynamic-properties");
-        dynamicPage.clickclick().visibleAfter();
+        dynamicPage.clickclick().visibleAfter().changeColorRed();
 
     }
 }

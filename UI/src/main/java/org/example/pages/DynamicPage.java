@@ -1,5 +1,6 @@
 package org.example.pages;
 
+import org.example.driver.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -33,13 +34,13 @@ public class DynamicPage extends BasePage{
         elementActions.waitElementToBEVisible(visibleAfter);
         return this;
     }
-//   @Test(priority = 3)
-//    public void color (){
-//       FluentWaitWait<WebDriverWait> wait = new FluentWait<>(driver)
-//               .withTimeout(Duration.ofSeconds(5))
-//               .pollingEvery(Duration.ofSeconds(1));
-//
-//   }
+    public DynamicPage changeColorRed(){
+        new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(15)).
+                until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@id='colorChange']")));
+        ((JavascriptExecutor) Driver.getDriver()).executeScript("arguments[0].style.backgroundColor = 'red';", colorChange);
+        return this;
+    }
+
 }
 
 

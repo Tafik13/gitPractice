@@ -22,6 +22,8 @@ public abstract class BaseTest {
 
     public ButtonsPage buttonsPage;
     public DynamicPage dynamicPage;
+    public AlertsPage alertsPage;
+    public FramesPage framesPage;
 
     @BeforeClass(alwaysRun = true)
     public void setupBrowser(){
@@ -34,6 +36,8 @@ public abstract class BaseTest {
         checkBoxPage = new CheckBoxPage();
         buttonsPage = new ButtonsPage();
         dynamicPage = new DynamicPage();
+        alertsPage = new AlertsPage();
+        framesPage = new FramesPage();
 
 
 
