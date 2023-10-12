@@ -1,1 +1,5 @@
-public class VisaSilver
+public class VisaSilver{
+    public static void main(String[] args) {
+        System.out.println("Visa Silver");
+    }
+}
